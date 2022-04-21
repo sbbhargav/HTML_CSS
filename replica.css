@@ -22,27 +22,21 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    margin-top: 2rem;
 }
 
 
 
 /* header */
 header {
-    margin-top: 2rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
     position: relative;
+    border-bottom: 0.1rem solid grey;
+    width: 70%;
+    text-align: center;
+    padding-bottom: 1rem;
+    margin: 0 auto;
 }
 
-.nav-bar__heading {
-    border-bottom: 0.05rem solid grey;
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 1rem;
-}
 
 .toggle-button {
     position: absolute;
@@ -71,6 +65,7 @@ nav {
     flex-direction: column;
     gap: 1rem;
     position: relative;
+    margin-top: 1rem;
 }
 
 
@@ -171,7 +166,7 @@ nav {
 main {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 5rem;
     margin-bottom: 3rem;
 }
 
@@ -290,7 +285,7 @@ main {
 .container__links__info li {
     display: block;
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
 }
 
 .container__links__info li:hover {
@@ -318,7 +313,7 @@ main {
 }
 
 .container__mail__fields--mail {
-    max-width: 15rem;
+    width: 15rem;
     height: 2rem;
     padding-left: 0.4rem;
 }
@@ -414,6 +409,7 @@ main {
     .container__contact__heading__info__item p {
         line-height: 1.5rem;
     }
+
     .main-content__img img {
         width: 350px;
         height: 330px;
@@ -438,10 +434,11 @@ main {
         font-size: 4rem;
         width: 500px;
     }
-    .container__contact__heading__info__item img{
+
+    .container__contact__heading__info__item img {
         padding-top: 0.2rem;
     }
-    
+
 }
 
 /* media query for mobiles */
@@ -452,11 +449,17 @@ main {
         z-index: 100;
     }
 
-    .nav-bar__heading {
+    header {
         width: 100%;
         border-bottom: 0;
         padding-bottom: 0;
     }
+
+    /* .nav-bar__heading {
+		width: 100%;
+		border-bottom: 0;
+		padding-bottom: 0;
+	} */
 
     .toggle-button {
         display: flex;
@@ -574,7 +577,7 @@ main {
 
     .container {
         flex-direction: column;
-        gap: 1rem;
+        gap: 2rem;
     }
 
     .container__links {
