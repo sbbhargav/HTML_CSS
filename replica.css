@@ -41,7 +41,26 @@ header {
     width: 70%;
     display: flex;
     justify-content: center;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background-color: #fff;
+}
+
+.toggle-button .bar {
+    height: 4px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
 }
 
 /* navigation section */
@@ -81,24 +100,7 @@ nav {
     color: rgba(185, 157, 65, 255);
 }
 
-.toggle-button {
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    background-color: #fff;
-}
 
-.toggle-button .bar {
-    height: 4px;
-    width: 100%;
-    background-color: black;
-    border-radius: 10px;
-}
 
 /* banner section */
 .carousel {
